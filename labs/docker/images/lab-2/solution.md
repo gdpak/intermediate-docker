@@ -16,7 +16,7 @@ RUN apt-get update && \
 WORKDIR /opt/tomcat
 
 # download the apache tomcat to the working directory
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.tar.gz .
+ADD https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.tar.gz .
 
 # extracting from the tar to the working directory
 RUN tar -xvzf apache-tomcat-9.0.56.tar.gz
