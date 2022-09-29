@@ -45,4 +45,4 @@ docker run -d --rm -p 8080:8080 tomcat:9.0
 
 > Check the url at http://localhost:8080
 
-> Back to the [exercises](../README.md).
+> Back to the [exercises](../README.md#lab-2).

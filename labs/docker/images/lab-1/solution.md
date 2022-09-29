@@ -28,4 +28,4 @@ docker run java-hello-world
 
 > The output should say `Hello, World`
 
-> Back to the [exercises](../README.md).
+> Back to the [exercises](../README.md#lab-1).
