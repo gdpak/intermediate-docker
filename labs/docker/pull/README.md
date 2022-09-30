@@ -6,9 +6,7 @@ Most of your images will be created on top of a base image from the [Docker Hub]
 
 Docker Hub contains many pre-built images that you can `pull` and try without needing to define and configure your own.
 
-To download a particular image, or set of images (i.e., a repository), use `docker pull`.
-
-If no tag is provided, Docker Engine uses the `:latest` tag as a default. This command pulls the `nginx:latest` image:
+To download a particular image, or set of images (i.e., a repository), use `docker pull`. If no tag is provided, Docker Engine uses the `:latest` tag as a default. This command pulls the `nginx:latest` image:
 
 ```shell
 # pulls the latest nginx image from docker hub

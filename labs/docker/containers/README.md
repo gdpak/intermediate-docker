@@ -75,7 +75,7 @@ docker ps -a
 
 > You have two containers, both in the exited state. The container IDs match the hostname output - when Docker creates a container it assigns a random ID and sets it as the machine name.
 
-Those containers didn't do anything useful, but  one-off containers can be good for automation tasks, they can be packaged with all the tools and scripts they need.
+Those containers didn't do anything useful, but one-off containers can be good for automation tasks, they can be packaged with all the tools and scripts they need.
 
 Try a container which generates a security certiicate you can use for HTTPS in dev environments:
 
