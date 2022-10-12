@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whoami-lab-v1
+  labels:
+    k8s.course.label: deployments
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: whoami-lab
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: whoami-lab
+        version: v1
+    spec:
+      containers:
+        - name: app
+          image: thecodecamp/whoami:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whoami-lab-v2
+  labels:
+    k8s.course.label: deployments
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: whoami-lab
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: whoami-lab
+        version: v2
+    spec:
+      containers:
+        - name: app
+          image: thecodecamp/whoami:latest
+          env:
+            - name: WHOAMI_MODE
+              value: q
