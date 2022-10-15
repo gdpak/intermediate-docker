@@ -60,7 +60,7 @@ Print a list of all your containers.
 <details>
   <summary>Not sure how?</summary>
 
-```
+```shell
 # print running containers:
 docker container ls
 
@@ -132,7 +132,7 @@ Linux OS containers for Docker usually have the bare-minimum toolset installed.
 
 The Ubuntu team publish a package for Ubuntu Server but it doesn't have all the usual tools installed. There's no [curl](https://curl.se), so you can't make HTTP calls, but the container runs as the root user so you have permissions to install anything you need:
 
-```
+```shell
 docker run -it ubuntu
 
 curl https://google.com   # command not found
@@ -155,7 +155,7 @@ Run another Ubuntu container and see if it can use curl.
 <details>
   <summary>Not sure how?</summary>
 
-```
+```shell
 # you can do this as a one-off container - it won't work:
 docker run ubuntu bash -c 'curl https://google.com'
 ```
@@ -164,7 +164,7 @@ docker run ubuntu bash -c 'curl https://google.com'
 
 Interactive containers can do fun things with the screen - this is useful to impress people with your hacking skills :)
 
-```
+```shell
 docker run -it bcbcarl/hollywood
 
 # Ctrl-C / Cmd-C to stop the process
@@ -196,7 +196,7 @@ Find out which port the container is listening on, and try browsing to the web s
 <details>
   <summary>Not sure how?</summary>
 
-```
+```shell
 # print the container's port mapping
 docker container port nginx1
 

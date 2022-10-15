@@ -21,7 +21,7 @@ You will see the nginx is running on port 80 but the port is not exposed with th
 <details>
   <summary>Not sure how?</summary>
 
-```
+```shell
 # stop and remove the running `nginx` container
 docker stop nginx
 docker rm nginx
