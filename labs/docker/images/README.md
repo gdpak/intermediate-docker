@@ -37,7 +37,7 @@ docker build -t dockercourse/base ./labs/docker/images/base
 - you end the build command with the path to the Dockerfile folder
 - the folder path is called the *context* - it contains the Dockerfile and any files it references
 
-📋 List all the images you have - then filter them for images starting with 'dockercourse'.
+📋 List all the images you have - then filter them for images starting with `dockercourse`.
 
 <details>
   <summary>Not sure how?</summary>
